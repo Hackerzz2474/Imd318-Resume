@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>My Personal Website</title>
+	<link rel="stylesheet" href="Css/style.css">
+
+</head>
+
+<body>
+
+<div class="flipbook">
+	
+	<div class="hard cover-page">
+		<img src="Img/img1.jpg">
+		<h1 class="cover-title">My Resume <small>by Afiq Farhan</small></h1>
+	</div>
+
+<div class="page">
+  <h2>Table of Contents</h2>
+  <ul>
+    <li><a href="#" onclick="goToPage(4)">Content A</a></li>
+    <li><a href="#" onclick="goToPage(5)">Content B</a></li>
+    <li><a href="#" onclick="goToPage(6)">Content C</a></li>
+  </ul>
+</div>
+
+	
+	<div class="page">
+		<small>This is testing</small>
+		<small>Testing is testing</small>
+	</div>
+	
+	<div class="page">
+		<h1>Bio</h1>
+		<p>This is my Biogrpah</p>
+		<small>Cat 1</small>
+	</div>
+	
+	<div class="page">
+		<img src="">
+		<small>Cat 2</small>
+	</div>
+	
+	<div class="page">
+		<img src="">
+		<small>Cat 3</small>
+	</div>
+	
+	<div class="page">
+		<img src="">
+		<small>Cat 4</small>
+	</div>
+	
+	<div class="page">
+		<img src="">
+		<small>Cat 5</small>
+	</div>
+	
+	<div class="hard"></div>
+	<div class="hard">Testing you <small>Afiq Farhan</small></div>
+
+</div>
+
+
+<script src="Js/jquery.min.js"></script>
+<script src="Js/turn.js"></script>
+<script>
+	$('.flipbook').turn({
+		width: 1000,
+		height: 600,
+		autoCenter: true
+	});
+</script>
+<script>
+  function goToPage(pageNumber) {
+    $('.flipbook').turn('page', pageNumber);
+  }
+</script>
+
+</body>
+
+</html>
